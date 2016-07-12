@@ -2868,18 +2868,20 @@
 	}
 
 	#homeblog-carousel .jcarousel-item {
-		width: 550px;
+		width: 406px;
 		height: auto;	
 	}
 
 	#portfolio-carousel .jcarousel-item img {
 		width:100%;
 		height:auto;
+		min-height: 162px;
 	}
 
 	#homeblog-carousel .jcarousel-item img {
 		width:265px;
 		height:auto;
+		max-height: 202px;
 	}
 
 	#homeblog-carousel .jcarousel-item > a {
@@ -3099,4 +3101,14 @@
 
 
 
+}
+.blog-carousel-details h2 a{
+	text-align: center;
+	margin-top: 10px;
+}
+.blog-carousel-details h2{
+	margin-top: 10px;
+}
+.jcarousel-next-horizontal{
+	display: none !important;
 }

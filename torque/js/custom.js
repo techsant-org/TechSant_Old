@@ -18,6 +18,7 @@ $(window).load(function() {
 		},
 		hoverPause: true
 	});
+
 });
 
 
@@ -144,6 +145,17 @@ jQuery(document).ready(function() {
 	}, function(){
 			$(this).animate({ opacity: 0 }, 200);
 		});
+
+	var autoThumb = document.getElementById("autoThumb");
+	var autoSection = document.getElementById("automobile");
+	autoThumb.onclick = function(){
+		if(!$('#automobile').is(':visible')){
+			$("#automobile").slideDown("slow");
+		} else {
+			$("#automobile").slideUp("slow");
+		}
+		
+	};
 
 	// ISOTOPE SCRIPTS FOR PORTFOLIO FILTER, PORTFOLIO GRID LAYOUT, BLOG MASONRY //
 	var $container = $('.grid');
