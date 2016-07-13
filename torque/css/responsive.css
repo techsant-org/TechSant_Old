@@ -223,15 +223,15 @@
 		background: white;
 	}	
 	
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		padding-top:10px;
 	}
 
-	#homeblog-carousel .jcarousel-item {
+	#homeblog-carousel .jcarousel-item, #homeit-carousel .jcarousel-item {
 		width:220px;
 		height:auto !important;
 	}
-	#homeblog-carousel .jcarousel-container-horizontal {
+	#homeblog-carousel .jcarousel-container-horizontal, #homeit-carousel .jcarousel-container-horizontal {
 		height:auto;
 	}
 	
@@ -239,7 +239,7 @@
 		clear:both;
 	}	
 	
-	.jcarousel-item img, #homeblog-carousel .jcarousel-item img {
+	.jcarousel-item img, #homeblog-carousel .jcarousel-item img, #homeit-carousel .jcarousel-item img {
 		width:100%;
 	}
 	
@@ -972,29 +972,29 @@
 		height:auto !important;
 	}
 	
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		padding-top:10px;
 	}
 
-	#homeblog-carousel .jcarousel-item {
+	#homeblog-carousel .jcarousel-item, #homeit-carousel .jcarousel-item {
 		width:300px;
 		height:auto !important;
 	}
-	#homeblog-carousel .jcarousel-container-horizontal {
+	#homeblog-carousel .jcarousel-container-horizontal, #homeit-carousel .jcarousel-container-horizontal {
 		height:auto;
 	}
 	
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		clear:both;
 		width:300px;
 		margin-top:10px;
 	}	
 	
-	.jcarousel-item img, #homeblog-carousel .jcarousel-item img {
+	.jcarousel-item img, #homeblog-carousel .jcarousel-item img, #homeit-carousel .jcarousel-item img {
 		width:100%;
 	}
 	
-	#homeblog-carousel .jcarousel-item > a {
+	#homeblog-carousel .jcarousel-item > a, #homeit-carousel .jcarousel-item > a {
 		width:300px;
 	}
 
@@ -2377,26 +2377,26 @@
 		background: white;
 	}	
 	
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		padding-top:10px;
 	}
 
-	#homeblog-carousel .jcarousel-item {
+	#homeblog-carousel .jcarousel-item, #homeit-carousel .jcarousel-item {
 		width:236px;
 		height:auto !important;
 	}
-	#homeblog-carousel .jcarousel-item > a {
+	#homeblog-carousel .jcarousel-item > a, #homeit-carousel .jcarousel-item > a {
 		width:236px;
 	}
-	#homeblog-carousel .jcarousel-container-horizontal {
+	#homeblog-carousel .jcarousel-container-horizontal, #homeit-carousel .jcarousel-container-horizontal {
 		height:auto;
 	}
 	
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		clear:both;
 	}	
 	
-	.jcarousel-item img, #homeblog-carousel .jcarousel-item img {
+	.jcarousel-item img, #homeblog-carousel .jcarousel-item img, #homeit-carousel .jcarousel-item img {
 		width:100%;
 	}
 
@@ -2867,7 +2867,7 @@
 		height: auto;
 	}
 
-	#homeblog-carousel .jcarousel-item {
+	#homeblog-carousel .jcarousel-item, #homeit-carousel .jcarousel-item  {
 		width: 406px;
 		height: auto;	
 	}
@@ -2878,18 +2878,18 @@
 		min-height: 162px;
 	}
 
-	#homeblog-carousel .jcarousel-item img {
+	#homeblog-carousel .jcarousel-item img, #homeit-carousel .jcarousel-item img {
 		width:265px;
 		height:auto;
 		max-height: 202px;
 	}
 
-	#homeblog-carousel .jcarousel-item > a {
+	#homeblog-carousel .jcarousel-item > a, #homeit-carousel .jcarousel-item > a {
 		width:265px;
 		margin-right:20px;
 	}
 
-	#homeblog-carousel .blog-carousel-details {
+	#homeblog-carousel .blog-carousel-details, #homeit-carousel .blog-carousel-details {
 		width:265px;
 	}
 

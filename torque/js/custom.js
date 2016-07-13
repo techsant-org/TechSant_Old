@@ -147,15 +147,55 @@ jQuery(document).ready(function() {
 		});
 
 	var autoThumb = document.getElementById("autoThumb");
+	var itThumb = document.getElementById("itThumb");
 	var autoSection = document.getElementById("automobile");
+
+	function findPos(obj) {
+	    var curtop = 0;
+	    if (obj.offsetParent) {
+	        do {
+	            curtop += obj.offsetTop;
+	        } while (obj = obj.offsetParent);
+	    return [curtop];
+	    }
+	}
+
 	autoThumb.onclick = function(){
-		if(!$('#automobile').is(':visible')){
-			$("#automobile").slideDown("slow");
+		window.scroll(0,findPos(document.getElementById("autoThumb")));
+		if(!$("#informationTech").is(':visible')){
+			if(!$('#automobile').is(':visible')){
+				$("#automobile").slideDown("slow");
+			} else {
+				$("#automobile").slideUp("slow");
+			}
 		} else {
-			$("#automobile").slideUp("slow");
+			
+			$("#informationTech").slideUp("slow");
+			setTimeout(function(){
+				$("#automobile").slideDown("slow");
+			},300);
 		}
 		
 	};
+
+	
+
+	itThumb.onclick = function(){
+		window.scroll(0,findPos(document.getElementById("autoThumb")));
+		if(!$("#automobile").is(':visible')){
+			if(!$('#informationTech').is(':visible')){
+				$("#informationTech").slideDown("slow");
+			} else {
+				$("#informationTech").slideUp("slow");
+			}
+			
+		} else {
+			$("#automobile").slideUp("slow");
+			setTimeout(function(){
+				$("#informationTech").slideDown("slow");
+			},300);
+		}
+	}
 
 	// ISOTOPE SCRIPTS FOR PORTFOLIO FILTER, PORTFOLIO GRID LAYOUT, BLOG MASONRY //
 	var $container = $('.grid');
@@ -248,7 +288,7 @@ jQuery(document).ready(function() {
 
 	
 	// PRELOAD IMAGES //
-	$("#portfolio-carousel, #homeblog-carousel, .post-thumbnail, .portfolio li").preloadify();
+	$("#portfolio-carousel, #homeblog-carousel, #homeit-carousel, .post-thumbnail, .portfolio li").preloadify();
 
 	
 	// MENU SUBNAV HACKS //
@@ -361,6 +401,17 @@ jQuery(document).ready(function() {
         easing: 'swing',
         auto: 0
 	});			
+
+	$('#homeit-carousel').jcarousel({
+        vertical: false,
+        rtl: false,
+        start: 1,
+        offset: 1,
+        scroll: 1,
+        animation: 'normal',
+        easing: 'swing',
+        auto: 0
+	});	
 		
 		
 	// HOMEPAGE PORTFOLIO CAROUSEL //
